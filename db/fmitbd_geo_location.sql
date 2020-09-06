@@ -111,9 +111,6 @@ CREATE TABLE `users` (
   `dob` date NOT NULL,
   `gender` tinyint(1) NOT NULL,
   `image` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `status` int(11) DEFAULT NULL COMMENT '0= like and 1 = dislike',
-  `sender_id` int(20) DEFAULT NULL,
-  `receiver_id` int(20) DEFAULT NULL,
   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL

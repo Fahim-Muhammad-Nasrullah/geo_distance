@@ -50,7 +50,7 @@
                                     <input type="hidden" value="{{$user->name}}" id="receiver_id">
                                     <th scope="row">{{ $loop->iteration  }}</th>
                                     <td>{{ $user->name }}</td>
-                                    <td><img src="{{ asset('storage/users/'.$user->image) }} " class="user-pic" alt="{{ $user->name }}"></td>
+                                    <td><img src="{{ asset('storage/app/public/users/'.$user->image) }}" class="user-pic" alt="{{ $user->name }}"></td>
                                     <td>{{ $data->distance(auth()->user()->latitude,auth()->user()->longitude,$user->latitude, $user->longitude,$unit) }}</td>
                                     <td>{{ $user->gender ==0 ? 'Male':'Female' }}</td>
                                     <td>{{ Carbon\Carbon::parse($user->dob)->age }}</td>
