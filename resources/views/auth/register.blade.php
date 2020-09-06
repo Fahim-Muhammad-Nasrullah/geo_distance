@@ -58,11 +58,11 @@
 
                             <div class="col-md-6">
                                     <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="gender" id="gender" value="Male">
+                                    <input class="form-check-input" type="radio" name="gender" id="gender" value="0">
                                     <label class="form-check-label" for="gender">Male</label>
                                   </div>
                                   <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="gender" id="gender" value="Female">
+                                    <input class="form-check-input" type="radio" name="gender" id="gender" value="1">
                                     <label class="form-check-label" for="inlineRadio2">Female</label>
                                   </div>
 
@@ -72,15 +72,20 @@
                                     </span>
                                 @enderror
                             </div>
-                            {{-- <div class="col-md-3">
-                                <input id="gender" type="redio" class="form-control @error('profile_photo') is-invalid @enderror" name="gender" value="{{ old('gender') }}" required autocomplete="gender">
+                        </div>
+                        <div class="form-group row">
+                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Date Of Birth') }}</label>
 
-                                @error('gender')
+                            <div class="col-md-6">
+                                    <input class="form-control form-control-inline date-picker" name="dob"
+                                                        placeholder="dd-mm-yyyy" size="16" type="date" value="" required/>
+
+                                @error('dob')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
-                            </div> --}}
+                            </div>
                         </div>
 
                         <div class="form-group row">

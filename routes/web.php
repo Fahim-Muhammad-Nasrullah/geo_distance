@@ -20,3 +20,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/user-like', 'HomeController@user_like')->name('user-like');
+Route::get('/user-dislike', 'HomeController@user_dislike')->name('user-dislike');
